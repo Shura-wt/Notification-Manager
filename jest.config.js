@@ -22,6 +22,13 @@ module.exports = {
             lines: 50,
             statements: 50,
         },
-    }
+    },
+
+    coverageReporters: [
+        ["text", { file: "coverage.txt" }]
+        
+    ],
+
+
 
 };
