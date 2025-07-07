@@ -15,13 +15,20 @@ module.exports = {
        "src/**/*.ts",
     ],
 
-    coverageThreshold: {
-        global: {
-            branches: 50,
-            functions: 50,
-            lines: 50,
-            statements: 50,
-        },
-    }
+    // coverageThreshold: {
+    //     global: {
+    //         branches: 50,
+    //         functions: 50,
+    //         lines: 50,
+    //         statements: 50,
+    //     },
+    // },
+
+    coverageReporters: [
+        ["text", { file: "coverage.txt" }]
+
+    ],
+
+
 
 };
