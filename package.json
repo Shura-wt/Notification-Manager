@@ -4,9 +4,9 @@
   "main": "build/src/index.ts",
   "scripts": {
     "start": "npm run build && node build/src/index.js",
-    "build": "../../Downloads/ynov_notification_manager/node_modules/.bin/tsc -p .",
-    "test": "../../Downloads/ynov_notification_manager/node_modules/.bin/jest",
-    "test:report": "../../Downloads/ynov_notification_manager/node_modules/.bin/jest --outputFile=jest-results.json --json > jest.console.txt 2>&1",
+    "build": "tsc -p .",
+    "test": "jest",
+    "test:report": "jest --outputFile=jest-results.json --json > jest.console.txt 2>&1",
     "prettier": "prettier --write 'src/**/*.ts'"
   },
   "author": "",
